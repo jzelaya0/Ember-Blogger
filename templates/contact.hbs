@@ -8,11 +8,18 @@
     </ul>
   </nav>
   <h1>Contact</h1>
-  <p>
-    Want to get in touch?
-  </p>
-  <ul>
-    <li><span class="glyphicon glyphicon-phone-alt"></span>Phone: 1-800-Dracula</li>
-    <li><span class="glyphicon glyphicon-envelope"></span><a href="count@dracula.com">count@dracula.com</a></li>
-  </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        Want to get in touch?
+      </p>
+      <ul>
+        <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+        <li>{{#link-to 'email'}}Email{{/link-to}}</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      {{outlet}}
+    </div>
+  </div>
 </div>
