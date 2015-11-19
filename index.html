@@ -3,15 +3,20 @@
 
 <head>
   <title>Dracula's blog</title>
-
+  <!-- CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
-
+  <!-- DEPENDENCIES -->
   <script src="libs/jquery-1.11.1.js"></script>
   <script src="libs/handlebars-v1.3.0.js"></script>
   <script src="libs/ember.js"></script>
   <script src="libs/ember-handlebars-loader-0.0.1.js"></script>
-
+  <!-- SCIPTS -->
   <script src="blogger.js"></script>
+  <script src="router.js"></script>
+  <!-- LOAD ROUTES -->
+  <script>
+    EmberHandlebarsLoader.loadTemplates(['posts','about'])
+  </script>
 </head>
 
 <body>
