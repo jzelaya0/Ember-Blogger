@@ -8,5 +8,5 @@ Blogger.Router.map(function(){
     this.resource('email');
   });
   this.resource('recent-comments');
-  this.resource('post', {path: 'posts/post_:id'})//View single post
+  this.resource('post', {path: 'posts/:post_id'});//View single post
 })
