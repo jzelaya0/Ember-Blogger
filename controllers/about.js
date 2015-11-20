@@ -7,6 +7,9 @@ Blogger.AboutController = Ember.Controller.extend({
     showPicture: function(){
       //Ember depends on .set() to obeserve changes in objects properties
       this.set('isPictureShowing', true);
+    },
+    hidePicture: function(){
+      this.set('isPictureShowing', false)
     }
   }
 });
