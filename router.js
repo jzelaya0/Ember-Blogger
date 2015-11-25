@@ -9,4 +9,6 @@ Blogger.Router.map(function(){
   });
   this.resource('recent-comments');
   this.resource('post', {path: 'posts/:post_id'});//View single post
+  this.resource('new-post');
+
 })

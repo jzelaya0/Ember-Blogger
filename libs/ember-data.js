@@ -11,17 +11,17 @@ var define, requireModule, require, requirejs;
   } else {
     _isArray = Array.isArray;
   }
-  
+
   var registry = {}, seen = {}, state = {};
   var FAILED = false;
 
   define = function(name, deps, callback) {
-  
+
     if (!_isArray(deps)) {
       callback = deps;
       deps     =  [];
     }
-  
+
     registry[name] = {
       deps: deps,
       callback: callback
@@ -11951,9 +11951,9 @@ define("ember-inflector/system",
 
     var defaultRules = __dependency3__["default"];
 
-    
+
     Inflector.inflector = new Inflector(defaultRules);
-    
+
     __exports__.Inflector = Inflector;
     __exports__.singularize = singularize;
     __exports__.pluralize = pluralize;
@@ -12285,9 +12285,9 @@ define("ember-inflector/system/inflector",
       */
       inflect: function(word, typeRules, irregular) {
         var inflection, substitution, result, lowercase, wordSplit,
-          firstPhrase, lastWord, isBlank, isCamelized, isUncountable, 
+          firstPhrase, lastWord, isBlank, isCamelized, isUncountable,
           isIrregular, isIrregularInverse, rule;
-      
+
         isBlank = BLANK_REGEX.test(word);
         isCamelized = CAMELIZED_REGEX.test(word);
         firstPhrase = "";
